@@ -1,13 +1,24 @@
 
-.cabecalho {
-padding: 15px 25px;
+.cabecalho { /*define o arquivo".cabeçalho"*/
+display: flex; /*transformaremos o cabeçalho em um contêiner flexível*/
+justify-content: space-between; /*posicionará os elementos nas extremidades, um à esquerda e outro à direita.*/
+align-items: center; /*alinhará verticalmente todos os itens no centro do contêiner.*/
+padding: 15px 25px; /*preenche uma parte do cabeçalho*/
+} /*fecha uma parte do código*/
+
+.cartao { /*define o arquivo .cartão*/
+width: 260px; /*define a largura do arquivo*/
+height: 200px; /*define a altura do arquivo*/
 }
 
-.cartao {
-width: 260px;
-height: 200px;
+.cartao-imagem { /*define o arquivo .cartão-imagem*/
+width: 100%; /*define a porcentagem de largura da imagem*/
+} /*fecha uma parte do código*/
+body { /*define o narquivo body*/
+display: flex; /*transforma o cabeçalho em um contêiner flexível. */
+flex-direction: column; /*indicará que os elementos filhos (header, main e footer) devem ser organizados de cima para baixo. */
+min-height: 100vh; /*garante que o corpo ocupe 100% da altura da tela, mesmo com pouco conteúdo. */
 }
-
-.cartao-imagem {
-width: 100%;
+main { /*expandirá até preencher todo o espaço disponível entre o cabeçalho e o rodapé, permitindo que o rodapé fique fixo no fim da tela, sem sobrepor o conteúdo.*/
+flex: 1;
 }
